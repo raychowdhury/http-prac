@@ -1,7 +1,7 @@
 <div class="posts">
 
     <input type="text" 
-    (keyup)="createPost(title)"#title
+    (keyup.enter)="createPost(title)"#title
         class="form-control" 
         placeholder="Enter your text">
 <ul class="list-group">
