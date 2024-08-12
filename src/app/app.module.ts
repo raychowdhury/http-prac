@@ -4,21 +4,24 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './app-posts/posts/posts.component';
-import { PostDetailsComponent } from './app-posts/post-details/post-details.component';
+import { PostsComponent } from './app-posts/components/posts/posts.component';
+import { PostDetaisComponent } from './app-posts/components/post-detais/post-detais.component';
+import { ApiServiceService } from './app-posts/services/api-service.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    PostDetailsComponent
+    PostDetaisComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ApiServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
