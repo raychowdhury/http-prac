@@ -4,16 +4,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './app-posts/components/posts/posts.component';
-import { PostDetaisComponent } from './app-posts/components/post-detais/post-detais.component';
-import { ApiServiceService } from './app-posts/services/api-service.service';
+import { ArticleService } from './app-article/services/article.service';
+import { ArticleListComponent } from './app-article/components/article-list/article-list.component';
+import { ArticleDetailsComponent } from './app-article/components/article-details/article-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent,
-    PostDetaisComponent,
+    ArticleListComponent,
+    ArticleDetailsComponent
     
   ],
   imports: [
@@ -21,7 +21,7 @@ import { ApiServiceService } from './app-posts/services/api-service.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ApiServiceService],
+  providers: [ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
