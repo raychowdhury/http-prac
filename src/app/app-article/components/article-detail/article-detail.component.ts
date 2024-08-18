@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ArticleService } from '../../services/article.service';
 
 @Component({
-  selector: 'app-article-details',
-  templateUrl: './article-details.component.html',
-  styleUrls: ['./article-details.component.scss']
+  selector: 'app-article-detail',
+  templateUrl: './article-detail.component.html',
+  styleUrls: ['./article-detail.component.scss']
 })
-export class ArticleDetailsComponent {
+export class ArticleDetailComponent {
   public articles :any
 
   constructor( private _articleservice: ArticleService){}
@@ -16,8 +16,5 @@ export class ArticleDetailsComponent {
     .subscribe(data => this.articles = data);
    
 }
+
 }
-
-
-
-

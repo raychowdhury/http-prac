@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArticleDetailComponent } from './components/article-detail/article-detail.component';
 import { ArticleListComponent } from './components/article-list/article-list.component';
-import { ArticleDetailsComponent } from './components/article-details/article-details.component';
 
 const routes: Routes = [
-  { path: 'ArticleList', component: ArticleListComponent },
-  { path: 'ArticleDetails', component: ArticleDetailsComponent },
-
-
+  { path: 'articlelist', component: ArticleListComponent },
+  { path: 'articledetail', component: ArticleDetailComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppArticleRoutingModule { }
