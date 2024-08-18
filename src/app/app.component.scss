@@ -1,0 +1,33 @@
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(246, 246, 246);
+    margin: 0;
+    padding: 10;
+    height:50px;
+    align-items: center;
+    justify-content: center;
+    li{
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px;
+        border-radius: 7px;
+        cursor: pointer;
+        border: 1px transparent;
+    }
+    li:hover{
+        background-color: #040404;
+        border: 1px rgb(254, 252, 252);
+        font-size: 18px;
+        font-weight: bold;
+        padding: 6px;
+        border-radius: 7px;
+        color: aliceblue;
+
+    }
+
+}
+li{
+    list-style: none;
+}
