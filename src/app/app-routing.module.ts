@@ -11,6 +11,11 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./app-about/app-about.module').then(m => m.AppAboutModule)
     
+  },
+  {
+    path: '',
+    loadChildren: () => import('./app-contact/app-contact.module').then(m => m.AppContactModule)
+    
   }
 ];
 
