@@ -10,11 +10,11 @@ const routes: Routes = [
     component: ArticleDefaultComponent,
     children: [
       {
-        path: 'articlelist',
+        path: 'article',
         component: ArticleListComponent,
       },
       {
-        path: 'articledetail',
+        path: 'article/:id',
         component: ArticleDetailComponent,
       },
     ],

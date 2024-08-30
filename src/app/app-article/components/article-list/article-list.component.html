@@ -2,7 +2,7 @@
     <li
     *ngFor="let article of articles"
     >
-    {{article.id}}. {{article.title}} <button><a routerLink="/articledetail">Details</a></button></li>
+    {{article.id}}. {{article.title}} <button><a (click)="onArticleItem(article.id)" >Details</a></button></li>
 </ul>
 
 

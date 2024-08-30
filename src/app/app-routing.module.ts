@@ -5,6 +5,12 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./app-article/app-article.module').then(m => m.AppArticleModule)
+    
+  },
+  {
+    path: '',
+    loadChildren: () => import('./app-about/app-about.module').then(m => m.AppAboutModule)
+    
   }
 ];
 
