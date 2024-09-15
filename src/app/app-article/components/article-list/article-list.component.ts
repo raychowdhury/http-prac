@@ -20,7 +20,7 @@ export class ArticleListComponent implements OnInit {
   }
 
   onArticleItem(id : string, title:string, body:string){
-    console.log(`${id} - ${title} - ${body}`); 
+    // console.log(`${id} - ${title} - ${body}`); 
     this._router.navigate([`/article/${id}`]).then();
 
   }
