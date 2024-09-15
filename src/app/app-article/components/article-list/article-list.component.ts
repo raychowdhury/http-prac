@@ -19,8 +19,8 @@ export class ArticleListComponent implements OnInit {
       .subscribe((data) => (this.articles = data));
   }
 
-  onArticleItem(id : string){
-    console.log(id); 
+  onArticleItem(id : string, title:string, body:string){
+    console.log(`${id} - ${title} - ${body}`); 
     this._router.navigate([`/article/${id}`]).then();
 
   }
