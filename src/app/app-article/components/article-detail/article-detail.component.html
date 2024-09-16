@@ -2,5 +2,15 @@
     <p>ID - {{ article.id }}</p>
     <p> Title- {{ article.title }}</p>
     <p> Body - {{ article.body }}</p>
-  </div>
+
+    <a routerLink="/previous" (click)="goPrevious()">
+      <button>Previous</button>
+    </a>
+    
+    <a routerLink="/next" (click)="goNext()">
+      <button>Next</button>
+    </a>
+    
+</div>
+
   
